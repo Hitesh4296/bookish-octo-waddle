@@ -11,11 +11,12 @@ import {
   Text,
   Content,
   JobTitle,
+  Main,
 } from "./styles";
 
 const Resume = () => {
   return (
-    <>
+    <Main>
       <GridContainer>
         <Header />
       </GridContainer>
@@ -65,9 +66,9 @@ const Resume = () => {
               </li>
               <li>
                 <b>Performance Optimization:</b> Improved Next.js app
-                performance by reducing Cumulative Layout Shift (CLS) from the
-                80th percentile to 14th, and enhanced LCP and FCP to 0.8-0.9s,
-                positioning the platform in the 55th percentile for performance.
+                performance by reducing Cumulative Layout Shift (CLS) to ~0 for
+                80 percentile users, and enhanced LCP and FCP to 0.8-0.9s,
+                averaging performance scores of 81 for Desktop application.
               </li>
             </ul>
             <b>Tools:</b> ReactJS, Remix, Next.js, TailwindCSS, Jenkins,
@@ -204,7 +205,7 @@ const Resume = () => {
       </GridContainer>
 
       <Footer />
-    </>
+    </Main>
   );
 };
 

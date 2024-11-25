@@ -9,12 +9,16 @@ export const LinkChild = (children: React.ReactNode) => {
 const Header = () => {
   return (
     <>
-      <Link to="/" end>
+      <Link to="/about" onClick={(e) => e.preventDefault()}>
         {LinkChild("> ABOUT_ME")}
       </Link>
-      <Link to="/resume">{LinkChild("> RESUME")}</Link>
-      <Link to="/components">{LinkChild("> COMPONENTS")}</Link>
-      <Link to="/contact">{LinkChild("> CONTACT")}</Link>
+      <Link to="/">{LinkChild("> RESUME")}</Link>
+      <Link to="/components" onClick={(e) => e.preventDefault()}>
+        {LinkChild("> COMPONENTS")}
+      </Link>
+      <Link to="/contact" onClick={(e) => e.preventDefault()}>
+        {LinkChild("> CONTACT")}
+      </Link>
     </>
   );
 };

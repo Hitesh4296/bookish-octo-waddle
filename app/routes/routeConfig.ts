@@ -4,11 +4,11 @@ import Home from "./Home/App";
 export const routeConfig = [
   {
     path: "/",
-    Element: Home,
+    Element: Resume,
     index: true,
   },
   {
-    path: "/resume",
-    Element: Resume,
+    path: "/about",
+    Element: Home,
   },
 ];

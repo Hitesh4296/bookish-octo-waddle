@@ -1,5 +1,11 @@
 import styled from "@emotion/styled";
 
+export const Main = styled.main`
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
+`;
+
 export const ResumeContainer = styled.div`
   max-width: 1112px;
   margin: 2rem auto;
@@ -12,6 +18,11 @@ export const ResumeContent = styled.div`
   grid-template-columns: repeat(16, 1fr);
   text-align: left;
   gap: 1rem;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 export const Content = styled.div`
@@ -19,6 +30,12 @@ export const Content = styled.div`
   flex-direction: row;
   align-items: center;
   gap: 1rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 0rem;
+    align-items: flex-start;
+  }
 `;
 
 export const Name = styled.h1`

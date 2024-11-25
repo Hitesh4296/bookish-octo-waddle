@@ -10,6 +10,10 @@ export const GridContainer = styled.div`
   * {
     overflow: hidden;
   }
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(8, 1fr);
+  }
 `;
 
 export const WithBackGround = styled.div`
