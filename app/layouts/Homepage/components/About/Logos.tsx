@@ -1,4 +1,3 @@
-import styled from "@emotion/styled";
 import { GridItem } from "../../styles";
 import { Logo, LogoContainer } from "./styles";
 
